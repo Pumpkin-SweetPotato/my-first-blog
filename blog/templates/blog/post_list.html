@@ -5,7 +5,18 @@
     <title>헤헿</title>
 </head>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+<table>
+{% for item in products %}
+    <div>
+        <td>{{item.key}}</td>
+        <p>{{item.name}}</p>
+        <h1><a href={{item.href}}> <img src={{item.img}}> </a></h1>
+        <p>{{ item.price}}</p>
+
+    </div>
+
+{% endfor %}
+</table>
 </body>
 </html>
+

@@ -17,4 +17,16 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+class  MyPost(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    product_name = models.CharField(max_length=50)
+    href = models.CharField(max_length=300)
+    product_price = models.DecimalField(decimal_places=10,max_digits=19)
+
+
+    def __str__(self):
+        return self.product_name
+
+
+
 # Create your models here.
