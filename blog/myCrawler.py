@@ -1,5 +1,5 @@
 import requests
-from urllib import parse
+import urllib
 from bs4 import BeautifulSoup
 
 def spider(item_name):

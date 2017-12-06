@@ -25,7 +25,7 @@ SECRET_KEY = '$-4@+#466icm_f22nk-3d(*p34d#n&4gg3-h6ib^3q2h88yhn9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com','.elasticbeanstalk.com']
 
 
 # Application definition
